@@ -1,0 +1,41 @@
+##-----------------------PROCEDIMIENTO PARA REALIZAR ESTE PROYECTO----------------------------------##
+
+#-----------ADVERTENCIAS---------------
+NO CREARSE CARPETAS CON ESPACIOS
+NO CREARSE CERPETAS CON  CON CARACTERES ESPECIALES COMO "Ñ"
+#-------------------------------------------
+
+
+1.INSTALAR LAS LIBRERIAS
+
+2.CREAMOS UNA CLASE PARA QUE DETECTE LA MANO (SEGUIMINIENTO DE MANOS.py):
+    La clase se llama detectormanos()  que esta en el archivo SeguimientoManos.py
+
+3.INSTALAR LABELME Y ACTUALIZAR SI ES REQUERIDO
+
+4.EJECUTAR LABELME Y EMPEZAR A SEGMENTAR TODAS LAS FOTOGRAFIAS (TOMARSE SU TIEMPO EN ESTE PASO )
+
+5.INSTALAR LABELME2YOLO PARA CONVERTIR DE FORMATO JSON a YOLO
+
+6.CONVERTIR LOS ARCHIVOS JSON A YOLO CON EL SIGUIENTE COMANDO:
+->     labelme2yolo --json_dir tu/direccion/sin/espacios
+   (LA DIRECCION NO DEBE CONTENER ESPACIO RARO , SI CONTIENE ESPACIO ENCERRARLO ENTRE "")
+
+7.ORDENAR LAS CARPETAS PARA EMPEZAR EL ENTRENAMIENTO
+      dataset/train/images       y   dataset/train/labels
+      dataset/val/images         y     dataset/val/labels
+
+8.El archivo dataset.yaml colocarlo en el proyecto y modificar las rutas de train y val
+
+9.Instalar Ultralytics :
+                          pip install ultralytics
+10.Instalar tu version de Pytorch de acuerdo a la disponibilidad de tu computador :
+                             https://pytorch.org/
+11. Entrenar a tu red neuronal : Ej()
+        yolo task=segment mode=train epochs=10 data=dataset.yaml model=yolov8n-seg.pt imgsz=640 batch=1
+
+
+
+
+
+
