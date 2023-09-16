@@ -1,0 +1,19 @@
+##-------------------------------------------INSTALAR LIBRERIAS ------------------------------------------------##
+Opencv-Python
+Numpy
+Matplotlib
+mediapipe
+
+----------------------Para la SEGMENTACION ----------------------
+--1.INSTALA LABELME->
+                      pip install labelme
+
+--2.Si te pide actualizar->
+                            python.exe -m pip install --upgrade pip
+
+-------------------------PARA EJECUTAR LABELME--------------------
+1.ABRE DESDE LA TERMINAL ->
+                                labelme
+-------------------PARA INSTALAR LABELME2YOLO--------------------------
+1.ABRE DESDE LA TERMINAL ->
+                           pip install labelme2yolo
