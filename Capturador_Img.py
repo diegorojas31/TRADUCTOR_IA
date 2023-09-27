@@ -17,7 +17,7 @@ cap.set(4,720)
 detector = sm.detectormanos(Confdeteccion=0.9)
 
 #---DECLARAMOS UN CONTADOR --
-cont =0
+cont =5
 
 
 while True:
@@ -43,11 +43,11 @@ while True:
         recorte=frame[ymin:ymax,xmin:xmax]
 
         #-----REDIMENSIONAMOS LA CAPTURA DE LA MANO --
-        #recorte= cv2.resize(recorte,(640,640),interpolation=cv2.INTER_CUBIC)
+        recorte= cv2.resize(recorte,(640,640),interpolation=cv2.INTER_CUBIC)
 
         if recorte.shape[0]>0 and recorte.shape[1]>0:
             # ----------------ALMACENAMIENTO DE IMAGENES--------------------------------------
-            cv2.imwrite("C:/Users/DIEGO ALEXANDER/PycharmProjects/TRADUCTOR_IA/ABECEDARIO/Letra_A/LETRA_A_{}.jpg".format(cont),recorte) #MODIFICAR
+            cv2.imwrite("C:/Users/DIEGO ALEXANDER/PycharmProjects/TRADUCTOR_IA/ABECEDARIO/LETRA_Y/LETRA_Y_{}.jpg".format(cont),recorte) #MODIFICAR
             cont = cont + 1
             cv2.imshow("RECORTE", recorte)
             cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), [0, 255, 0], 2)
@@ -57,7 +57,7 @@ while True:
 
     #---LEER NUESTRO TECLADO ------s
     t=cv2.waitKey(1)
-    if t==27 or cont==300:    #LA VERIABLE CONT PARA LA CANTIDAD DE CAPTURAS QUE TOMARA PARA CERRARSE EL PROGRMA
+    if t==27 or cont==10:    #LA VERIABLE CONT PARA LA CANTIDAD DE CAPTURAS QUE TOMARA PARA CERRARSE EL PROGRMA
         break
 cap.release()
 cv2.destroyAllWindows()

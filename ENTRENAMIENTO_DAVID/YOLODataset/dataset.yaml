@@ -1,0 +1,5 @@
+train: C:\Users\DIEGO ALEXANDER\PycharmProjects\TRADUCTOR_IA\ENTRENAMIENTO_DAVID\YOLODataset/images/train/
+val: C:\Users\DIEGO ALEXANDER\PycharmProjects\TRADUCTOR_IA\ENTRENAMIENTO_DAVID\YOLODataset/images/val/
+test: C:\Users\DIEGO ALEXANDER\PycharmProjects\TRADUCTOR_IA\ENTRENAMIENTO_DAVID\YOLODataset/images/test/
+nc: 24
+names: ['X', 'C', 'I', 'S', 'F', 'H', 'E', 'V', 'B', 'N', 'O', 'A', 'W', 'T', 'L', 'P', 'U', 'G', 'M', 'K', 'Q', 'D', 'Y', 'R']

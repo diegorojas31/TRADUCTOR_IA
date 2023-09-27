@@ -32,7 +32,7 @@ NO CREARSE CERPETAS CON  CON CARACTERES ESPECIALES COMO "Ñ"
 10.Instalar tu version de Pytorch de acuerdo a la disponibilidad de tu computador :
                              https://pytorch.org/
 11. Entrenar a tu red neuronal : Ej()
-        yolo task=segment mode=train epochs=10 data=dataset.yaml model=yolov8n-seg.pt imgsz=640 batch=1
+        yolo task=segment mode=train epochs=50 data=dataset.yaml model=yolov8m-seg.pt imgsz=640 batch=1
 
 
 

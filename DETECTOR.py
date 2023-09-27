@@ -14,7 +14,9 @@ cap.set(3,1280)
 cap.set(4,720)
 
 #---LEER NUESTRO MODELOS --
-model = YOLO('best555.pt')   #MODIFICAR
+model = YOLO('Train_David.pt')
+#model = YOLO('abecedario.pt')
+#MODIFICAR
 #modelo1=YOLO()
 
 
@@ -36,10 +38,10 @@ while True:
         xmin,ymin,xmax,ymax=  bbox
 
         #-----Asignamos un margen al cuadro ----
-        xmin=xmin-60
-        ymin=ymin-60
-        xmax=xmax+60
-        ymax=ymax+60
+        xmin=xmin-120
+        ymin=ymin-120
+        xmax=xmax+120
+        ymax=ymax+120
 
         #----Realizamos un recorte de nuestra mano -----
         recorte=frame[ymin:ymax,xmin:xmax]
@@ -55,7 +57,7 @@ while True:
            #PARA MODELO YOLOV8L  0.75
            #PARA MODELO YOLOV8X  0.85
 
-        resultados =model.predict(recorte,conf=0.33)
+        resultados =model.predict(recorte,conf=0.75)
         #if resultados==0:
 
 

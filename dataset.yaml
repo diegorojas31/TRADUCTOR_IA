@@ -1,0 +1,5 @@
+train: C:\Users\DIEGO ALEXANDER\PycharmProjects\TRADUCTOR_IA\Dataset_David/train/
+val: C:\Users\DIEGO ALEXANDER\PycharmProjects\TRADUCTOR_IA\Dataset_David/val/
+test:
+nc: 24
+names: ['X', 'C', 'I', 'S', 'F', 'H', 'E', 'V', 'B', 'N', 'O', 'A', 'W', 'T', 'L', 'P', 'U', 'G', 'M', 'K', 'Q', 'D', 'Y', 'R']
